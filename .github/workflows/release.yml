@@ -5,7 +5,7 @@ on:
     branches:
       - master
 
-concurrency: ${{ github.workflow }}-${{ github.ref }}
+concurrency: https://github.com/AzeKsi/take-home-tsh
 
 jobs:
   release:
@@ -28,4 +28,4 @@ jobs:
         with:
           commit: 'ci: bump version'
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
