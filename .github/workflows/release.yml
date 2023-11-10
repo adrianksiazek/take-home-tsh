@@ -28,4 +28,4 @@ jobs:
         with:
           commit: 'ci: bump version'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: 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
