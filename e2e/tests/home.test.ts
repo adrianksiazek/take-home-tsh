@@ -11,51 +11,51 @@ test.describe('Home Page', () => {
     await expect(product).toHaveCount(8);
   });
 
-  // test('search for a product', async ({ page }) => {
-  //   await homePageActions.openHomePage(page);
+  test('search for a product', async ({ page }) => {
+    await homePageActions.openHomePage(page);
 
-  //   await page.getByTestId('pw-search').fill('Pizza');
+    await page.getByTestId('pw-search').fill('Pizza');
 
-  //   const product = await page.getByTestId('pw-product');
+    const product = await page.getByTestId('pw-product');
 
-  //   await expect(product.first()).toContainText(/Pizza/);
-  // });
+    await expect(product.first()).toContainText(/Pizza/);
+  });
 
-  // test('show product modal', async ({ page }) => {
-  //   await homePageActions.openHomePage(page);
+  test('show product modal', async ({ page }) => {
+    await homePageActions.openHomePage(page);
 
-  //   await page.getByRole('button', { name: 'Show details' }).first().click();
+    await page.getByRole('button', { name: 'Show details' }).first().click();
 
-  //   const productModal = await page.getByTestId('pw-modal');
+    const productModal = await page.getByTestId('pw-modal');
 
-  //   await expect(productModal.first()).toBeVisible();
-  // });
+    await expect(productModal.first()).toBeVisible();
+  });
 
-  // test('filter promo products', async ({ page }) => {
-  //   await homePageActions.openHomePage(page);
+  test('filter promo products', async ({ page }) => {
+    await homePageActions.openHomePage(page);
 
-  //   await page.getByTestId('pw-checkbox-promo').check();
+    await page.getByTestId('pw-checkbox-promo').check();
 
-  //   const productItems = await page.getByTestId('pw-product').all();
+    const productItems = await page.getByTestId('pw-product').all();
 
-  //   for (const productItem of productItems) {
-  //     const hasBanner = productItem.getByTestId('pw-product-banner-promo');
+    for (const productItem of productItems) {
+      const hasBanner = productItem.getByTestId('pw-product-banner-promo');
 
-  //     await expect(hasBanner).toBeVisible();
-  //   }
-  // });
+      await expect(hasBanner).toBeVisible();
+    }
+  });
 
-  // test('filter active products', async ({ page }) => {
-  //   await homePageActions.openHomePage(page);
+  test('filter active products', async ({ page }) => {
+    await homePageActions.openHomePage(page);
 
-  //   await page.getByTestId('pw-checkbox-active').check();
+    await page.getByTestId('pw-checkbox-active').check();
 
-  //   const productItems = await page.getByTestId('pw-product').all();
+    const productItems = await page.getByTestId('pw-product').all();
 
-  //   for (const productItem of productItems) {
-  //     const button = productItem.getByTestId('pw-product-btn');
+    for (const productItem of productItems) {
+      const button = productItem.getByTestId('pw-product-btn');
 
-  //     await expect(button).toBeEnabled();
-  //   }
-  // });
+      await expect(button).toBeEnabled();
+    }
+  });
 });

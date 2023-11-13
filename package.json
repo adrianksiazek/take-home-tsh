@@ -17,13 +17,13 @@
     "lint:fix": "eslint --fix \"./src/**/*.{ts,tsx}\" && stylelint --fix \"./src/**/*.{css,pcss,scss}\" && echo \"lint success\"",
     "plop": "plop",
     "translations": "ts-node -T --skip-project ./scripts/fetch-translations.ts",
-    "serve:cypress": "http-server --proxy $(grep CYPRESS_HOST e2e/.env | cut -d '=' -f2)? ./build --port 1337",
+    "serve:playwright": "http-server --proxy $(grep PLAYWRIGHT_HOST e2e/.env | cut -d '=' -f2)? ./build --port 1337",
     "e2e:run:firefox": "cd e2e && npm run test:firefox && cd ..",
     "e2e:run:chrome": "cd e2e && npm run test:chrome && cd ..",
     "e2e:wait-and-run:firefox": "./node_modules/.bin/wait-on http://localhost:1337/ && npm run e2e:run:firefox",
     "e2e:wait-and-run:chrome": "./node_modules/.bin/wait-on http://localhost:1337/ && npm run e2e:run:chrome",
-    "e2e:ci:firefox": "npm-run-all -p -r serve:cypress e2e:wait-and-run:firefox",
-    "e2e:ci:chrome": "npm-run-all -p -r serve:cypress e2e:wait-and-run:chrome",
+    "e2e:ci:firefox": "npm-run-all -p -r serve:playwright e2e:wait-and-run:firefox",
+    "e2e:ci:chrome": "npm-run-all -p -r serve:playwright e2e:wait-and-run:chrome",
     "prepare": "husky install"
   },
   "lint-staged": {
