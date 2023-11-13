@@ -19,7 +19,7 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       black: '#1A1B1D',
-      white: '#FFFFF',
+      white: '#FFFFFF',
       primary: '#4460F7',
       secondary: '#2140E8',
       tertiary: '#F9A52B',
@@ -66,7 +66,7 @@ module.exports = {
         '0.75rem',
         {
           lineHeight: '1rem',
-          fontWeight: '700',
+          fontWeight: '600',
           letterSpacing: '-0.3px',
         },
       ],
@@ -74,7 +74,7 @@ module.exports = {
         '0.875rem',
         {
           lineHeight: '1.25rem',
-          fontWeight: '700',
+          fontWeight: '600',
           letterSpacing: '-0.5px',
         },
       ],
@@ -82,7 +82,15 @@ module.exports = {
         '1rem',
         {
           lineHeight: '1.5rem',
-          fontWeight: '700',
+          fontWeight: '600',
+          letterSpacing: '-0.5px',
+        },
+      ],
+      h4: [
+        '1.125rem',
+        {
+          lineHeight: '2rem',
+          fontWeight: '600',
           letterSpacing: '-0.5px',
         },
       ],

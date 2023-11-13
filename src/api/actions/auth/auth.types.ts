@@ -28,7 +28,7 @@ export type GetUsersResponse = {
 
 export type GetUsersInfiniteArgs = {
   pageParam?: string;
-  count?: string;
+  limit?: string;
 };
 
 export type GetUsersListArgs = {

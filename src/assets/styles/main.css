@@ -1,49 +1,82 @@
+@import '../../ui/modal/Modal.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
   .btn {
-    @apply flex items-center justify-center gap-2.5 rounded font-bold transition duration-200 disabled:cursor-not-allowed;
+    @apply flex items-center justify-center gap-2.5;
+    @apply rounded;
+    @apply font-bold;
+    @apply transition duration-200;
+    @apply disabled:cursor-not-allowed;
   }
   .btn-primary {
-    @apply bg-primary text-white hover:bg-secondary disabled:border-gray-dark;
+    @apply text-white;
+    @apply bg-primary hover:bg-secondary;
+    @apply disabled:border-gray-dark disabled:bg-gray-dark;
   }
   .btn-secondary {
-    @apply border border-solid border-primary bg-white text-primary hover:border-secondary hover:bg-white hover:text-secondary disabled:border-gray-dark disabled:text-gray-dark;
+    @apply bg-white;
+    @apply text-primary hover:text-secondary;
+    @apply border border-solid border-primary hover:border-secondary;
+    @apply disabled:border-gray-dark disabled:text-gray-dark;
   }
   .btn-lg {
-    @apply px-8 py-3 text-h3;
+    @apply text-h3;
+    @apply px-8 py-3;
   }
   .btn-md {
-    @apply px-5 py-2.5 text-h2;
+    @apply text-h2;
+    @apply px-5 py-2.5;
   }
   .btn-sm {
-    @apply px-4 py-2 text-h1;
+    @apply text-h1;
+    @apply px-4 py-2;
   }
   .container-2xl {
-    @apply max-w-[1400px] px-4 sm:px-8 2xl:px-0;
+    @apply px-4 sm:px-8 2xl:px-0;
+    @apply max-w-[1400px];
   }
   .container-xl {
-    @apply max-w-[1150px] px-4 sm:px-8 2xl:px-0;
+    @apply px-4 sm:px-8 2xl:px-0;
+    @apply max-w-[1150px];
   }
   .container-lg {
-    @apply max-w-[976px] px-4 sm:px-8 2xl:px-0;
+    @apply px-4 sm:px-8 2xl:px-0;
+    @apply max-w-[976px];
   }
   .form-control {
-    @apply relative rounded border border-solid border-gray-light px-4 py-3 text-black placeholder:text-lg placeholder:text-black focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary disabled:cursor-not-allowed disabled:bg-gray-dark disabled:text-gray-dark placeholder:disabled:text-gray-dark;
+    @apply relative;
+    @apply rounded;
+    @apply text-black placeholder:text-lg placeholder:text-black;
+    @apply px-4 py-3;
+    @apply border border-solid border-gray-light focus:border-primary;
+    @apply focus:outline-none focus:ring-1 focus:ring-primary;
+    @apply disabled:cursor-not-allowed disabled:bg-gray-dark disabled:text-gray-dark placeholder:disabled:text-gray-dark;
   }
   .form-control-md {
-    @apply px-4 pb-[13px] pt-2.5;
+    @apply px-4 pb-3 pt-2.5;
   }
   .form-control-sm {
     @apply px-3 py-2;
   }
   .checkbox {
-    @apply h-6 w-6 cursor-pointer rounded border border-solid border-gray-light text-primary accent-primary hover:border-primary focus:ring-transparent disabled:cursor-not-allowed disabled:border-gray-dark disabled:bg-gray-dark disabled:checked:border-none disabled:checked:bg-gray-dark;
+    @apply h-6 w-6;
+    @apply border border-solid border-gray-light hover:border-primary;
+    @apply cursor-pointer;
+    @apply rounded;
+    @apply text-primary;
+    @apply accent-primary;
+    @apply focus:ring-transparent;
+    @apply disabled:cursor-not-allowed disabled:border-gray-dark disabled:bg-gray-dark disabled:checked:border-none disabled:checked:bg-gray-dark;
   }
   .label {
-    @apply mb-2 inline-block cursor-pointer text-md;
+    @apply text-md;
+    @apply cursor-pointer;
+    @apply inline-block;
+    @apply mb-2;
   }
 }
 

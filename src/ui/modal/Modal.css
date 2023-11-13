@@ -1,0 +1,43 @@
+@layer components {
+  .modal-overlay {
+    @apply h-full w-full;
+    @apply fixed left-0 top-0 z-50;
+    @apply flex items-center justify-center;
+    background: rgba(26, 27, 29, 0.9);
+  }
+
+  .modal-dialog {
+    @apply relative;
+    @apply w-full;
+    @apply pointer-events-none;
+    @apply bg-transparent;
+    @apply px-4 2xs:px-0;
+  }
+
+  .modal-content {
+    @apply relative;
+    @apply flex flex-col;
+    @apply pointer-events-auto;
+    @apply w-full;
+    @apply max-w-md;
+    @apply mx-auto;
+    @apply md:my-8;
+    @apply bg-white;
+    @apply rounded-lg;
+  }
+
+  .modal-body {
+    @apply relative;
+    @apply flex-1;
+    @apply w-full;
+    @apply overflow-y-hidden;
+    @apply md:min-h-[400px];
+  }
+
+  .modal-close-btn {
+    @apply h-12 w-12;
+    @apply absolute right-0 z-10;
+    @apply flex items-center justify-center;
+    @apply ml-auto;
+  }
+}

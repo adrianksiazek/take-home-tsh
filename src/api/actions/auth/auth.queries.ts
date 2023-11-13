@@ -15,8 +15,8 @@ export const authQueries = {
   },
   getUsersInfinite:
     (client: AxiosInstance) =>
-    async ({ pageParam = '0', count = '5' }: GetUsersInfiniteArgs) => {
-      const queryParams = stringify({ page: pageParam, count: count }, { addQueryPrefix: true });
+    async ({ pageParam = '0', limit = '5' }: GetUsersInfiniteArgs) => {
+      const queryParams = stringify({ page: pageParam, limit: limit }, { addQueryPrefix: true });
       return (await client.get<GetUsersResponse>(`/users/${queryParams}`)).data;
     },
   getUsersList:
