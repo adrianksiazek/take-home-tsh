@@ -5,7 +5,6 @@ import { homePageActions } from '../actions/homePage';
 test.describe('Home Page', () => {
   test('show with limit products', async ({ page }) => {
     await homePageActions.openHomePage(page);
-    page.waitForLoadState('domcontentloaded');
 
     const product = await page.getByTestId('pw-product');
 
