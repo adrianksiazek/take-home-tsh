@@ -15,6 +15,7 @@ export const Checkbox = ({ label, name, checked, labelClass, formControlClass, o
         className={clsx('checkbox', formControlClass)}
         checked={checked}
         onChange={onChange}
+        data-testid={`pw-checkbox-${name}`}
       />
       <>
         <label title={label} htmlFor={id} className={clsx('label mb-0', labelClass)}>

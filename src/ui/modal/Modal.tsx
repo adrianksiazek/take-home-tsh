@@ -18,7 +18,7 @@ export const Modal = ({ opened, onClose, children, preventScroll = true }: Modal
           {opened && (
             <>
               <div className="modal-overlay">
-                <div ref={targetElement} className="modal-dialog">
+                <div ref={targetElement} className="modal-dialog" data-testid="pw-modal">
                   <div className="modal-content">
                     <button className="modal-close-btn" onClick={onClose}>
                       <CloseIcon />

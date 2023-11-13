@@ -10,6 +10,7 @@ export const Input = ({ name, placeholder, value, onChange, formControlClass }: 
       className={clsx('form-control', formControlClass)}
       value={value}
       onChange={onChange}
+      data-testid="pw-search"
     />
   );
 };
