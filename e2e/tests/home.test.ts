@@ -11,6 +11,19 @@ test.describe('Home Page', () => {
     await expect(product).toHaveCount(8);
   });
 
+  test('show empty product list design', async ({ page }) => {
+    await page.route('**/products/?page=1&limit=8', async (route) => {
+      const json = { meta: { totalPages: null }, items: [] };
+      await route.fulfill({ json });
+    });
+
+    await homePageActions.openHomePage(page);
+
+    const productEmptyList = await page.getByTestId('pw-product-empty-list');
+
+    await expect(productEmptyList).toBeVisible();
+  });
+
   test('search for a product', async ({ page }) => {
     await homePageActions.openHomePage(page);
 
