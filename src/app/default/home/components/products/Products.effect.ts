@@ -26,7 +26,7 @@ export const useProducts = () => {
     { keepPreviousData: true },
   );
 
-  const lastPage = productList?.meta.totalPages || 1;
+  const lastPage = 1;
 
   const setPage = (value: number) => {
     setSearchParams((prev) => {
