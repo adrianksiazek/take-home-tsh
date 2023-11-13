@@ -18,7 +18,9 @@ export const Header = () => {
             <div className="flex w-full flex-col gap-6">
               <div className="flex items-center justify-between">
                 <HeaderLogo />
-                <LinkButton href="/login">Log in</LinkButton>
+                <LinkButton href="/login" name="login-btn">
+                  Log in
+                </LinkButton>
               </div>
               <HeaderSearch />
             </div>
@@ -30,7 +32,7 @@ export const Header = () => {
                   <HeaderSearch />
                 </div>
               </div>
-              <LinkButton href="/login" className="min-w-fit">
+              <LinkButton href="/login" className="min-w-fit" name="login-btn">
                 Log in
               </LinkButton>
             </>

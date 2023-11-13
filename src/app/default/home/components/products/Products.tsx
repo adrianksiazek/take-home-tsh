@@ -28,6 +28,7 @@ export const Products = () => {
                   image={product.image}
                   promo={product.promo}
                   buttonText="Show details"
+                  data-testid="pw-product"
                 />
               ))}
             </div>
