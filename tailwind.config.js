@@ -94,6 +94,14 @@ module.exports = {
           letterSpacing: '-0.5px',
         },
       ],
+      h5: [
+        '1.875rem',
+        {
+          lineHeight: '2.5rem',
+          fontWeight: '600',
+          letterSpacing: '-0.5px',
+        },
+      ],
     }
   },
   plugins: [require('@tailwindcss/forms')],

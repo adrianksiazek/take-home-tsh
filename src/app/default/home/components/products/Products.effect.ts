@@ -14,7 +14,6 @@ export const useProducts = () => {
     data: productList,
     isLoading,
     isError,
-    error,
   } = useQuery(
     'getProducts',
     {
@@ -44,5 +43,5 @@ export const useProducts = () => {
     }
   }, [page, lastPage, setSearchParams]);
 
-  return { productList, isLoading, isError, error, searchParams, page, lastPage, setPage };
+  return { productList, isLoading, isError, searchParams, page, lastPage, setPage };
 };

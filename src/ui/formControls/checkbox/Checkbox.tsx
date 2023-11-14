@@ -19,7 +19,7 @@ export const Checkbox = ({ label, name, checked, labelClass, formControlClass, o
       />
       <>
         <label title={label} htmlFor={id} className={clsx('label mb-0', labelClass)}>
-          {label && <span>{label}</span>}
+          <span>{label}</span>
         </label>
       </>
     </div>

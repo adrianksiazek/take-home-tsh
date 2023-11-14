@@ -28,7 +28,7 @@ export const Product = ({ name, promo, image, description, rating, active }: Pro
           />
           {promo && <ProductBannerPromo />}
         </div>
-        <div className="flex h-full flex-col justify-between px-4 pb-6 pt-3">
+        <div className="flex h-full flex-col justify-between px-6 pb-6 pt-3">
           <div className="mb-10">
             <h2 className="text-h4">{name}</h2>
             <p className="text-md font-semibold text-gray-dark">{description}</p>

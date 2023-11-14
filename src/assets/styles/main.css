@@ -27,14 +27,6 @@
     @apply text-h3;
     @apply px-8 py-3;
   }
-  .btn-md {
-    @apply text-h2;
-    @apply px-5 py-2.5;
-  }
-  .btn-sm {
-    @apply text-h1;
-    @apply px-4 py-2;
-  }
   .container-2xl {
     @apply px-4 sm:px-8 2xl:px-0;
     @apply max-w-[1400px];
@@ -55,12 +47,6 @@
     @apply border border-solid border-gray-light focus:border-primary;
     @apply focus:outline-none focus:ring-1 focus:ring-primary;
     @apply disabled:cursor-not-allowed disabled:bg-gray-dark disabled:text-gray-dark placeholder:disabled:text-gray-dark;
-  }
-  .form-control-md {
-    @apply px-4 pb-3 pt-2.5;
-  }
-  .form-control-sm {
-    @apply px-3 py-2;
   }
   .checkbox {
     @apply h-6 w-6;
