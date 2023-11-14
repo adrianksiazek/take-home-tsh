@@ -1,6 +1,6 @@
 # Take-home-tsh
 
-A simple layout of online shop developed using react starter boilerplate.
+A simple layout of online shop developed using tailwind and playwright to tests.
 
 This project was bootstrapped with [Vite](https://github.com/vitejs/vite) and modified by TSH team.
 
@@ -36,9 +36,8 @@ npm start
 - `lint:fix` - Validate and fix the code using ESLint and Prettier
 - `plop` - Run CLI with commands for code generation
 - `translations` - Run [Babelsheet](https://github.com/TheSoftwareHouse/babelsheet2) tool for fetch the latest translations
-- `serve:cypress` - Run Cypress E2E tests panel
+- `serve:playwright` - Run playwright E2E tests panel
 - `version` - Build CHANGELOG file base on git commits history
-- `e2e:open` - Run E2E tests panel
 - `e2e:ci:firefox`: Run E2E tests on Firefox browser in CI pipelines
 - `e2e:ci:chrome`: Run E2E tests on Chrome browser in CI pipelines
 
