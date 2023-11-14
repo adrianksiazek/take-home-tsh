@@ -21,9 +21,9 @@ export const AuthContextController = ({ children }: AuthContextControllerProps) 
     onSuccess: (res) => {
       dispatch(
         setTokens({
-          accessToken: res.accessToken,
+          accessToken: res.access_token,
           refreshToken: res.refreshToken,
-          expires: res.expires,
+          expires: res.expiresIn,
         }),
       );
     },

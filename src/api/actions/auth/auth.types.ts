@@ -4,9 +4,9 @@ export type LoginMutationArguments = {
 };
 
 export type LoginMutationResponse = {
-  accessToken: string;
+  access_token: string;
   tokenType: string;
-  expires: number;
+  expiresIn: number;
   refreshToken: string;
 };
 

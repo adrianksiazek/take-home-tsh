@@ -6,14 +6,16 @@ import { ProductsEmptyList } from './ProductEmptylist';
 import { Pagination } from './products-pagination/ProductsPagination';
 
 export const Products = () => {
-  const { productList, isLoading, isError, error, setPage, page, lastPage } = useProducts();
+  const { productList, isLoading, isError, setPage, page, lastPage } = useProducts();
 
   return (
     <>
       {isLoading ? (
         <Loader />
       ) : isError ? (
-        <div>{(error as { message: string }).message}</div>
+        <div className="absolute left-1/2 top-1/2 -translate-y-1/2 bg-white p-12">
+          <h2>An error occured</h2>
+        </div>
       ) : (
         <>
           {productList && productList.items.length > 0 && (
