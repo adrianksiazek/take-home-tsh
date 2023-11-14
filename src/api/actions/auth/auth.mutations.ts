@@ -8,7 +8,7 @@ import {
 
 export const authMutations = {
   loginMutation: (client: AxiosInstance) => async (body: LoginMutationArguments) => {
-    return (await client.post<LoginMutationResponse>('/users/login', body)).data;
+    return (await client.post<LoginMutationResponse>('/authorize', body)).data;
   },
   // MUTATION_FUNCTIONS_SETUP
 };
