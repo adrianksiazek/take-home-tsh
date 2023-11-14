@@ -1,13 +1,7 @@
 import { AxiosInstance } from 'axios';
 import { stringify } from 'qs';
 
-import {
-  GetMeQueryResponse,
-  GetUsersInfiniteArgs,
-  GetUsersListArgs,
-  GetUsersResponse,
-  // QUERY_TYPE_IMPORTS
-} from './auth.types';
+import { GetMeQueryResponse, GetUsersInfiniteArgs, GetUsersListArgs, GetUsersResponse } from './auth.types';
 
 export const authQueries = {
   getCurrentUser: (client: AxiosInstance) => async () => {
@@ -25,5 +19,4 @@ export const authQueries = {
       const queryParams = stringify({ page, count: 5 }, { addQueryPrefix: true });
       return (await client.get<GetUsersResponse>(`/users/${queryParams}`)).data;
     },
-  // QUERY_FUNCTIONS_SETUP
 };
