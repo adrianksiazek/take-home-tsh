@@ -23,7 +23,7 @@ export const Product = ({ name, promo, image, description, rating, active }: Pro
           <img
             src={image}
             alt="Product"
-            className={clsx('max-h-52 w-full rounded-t-lg', !active && 'grayscale')}
+            className={clsx('max-w-52 w-full rounded-t-lg', !active && 'grayscale')}
             loading="lazy"
           />
           {promo && <ProductBannerPromo />}

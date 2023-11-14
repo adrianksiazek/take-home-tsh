@@ -14,7 +14,7 @@ export const AuthLayout = () => {
           <Logo />
           <LinkButton href="/">Back to home page</LinkButton>
         </div>
-        <div className="relative box-content flex w-full flex-col items-center justify-center px-5 pb-8 pt-3 md:max-w-md md:pb-16 md:pt-24 xl:px-32">
+        <div className="relative flex w-full flex-col items-center justify-center px-5 pb-8 pt-3 md:max-w-md md:pb-16 md:pt-24 lg:box-content xl:px-32">
           <Outlet />
         </div>
       </div>
