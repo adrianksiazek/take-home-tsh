@@ -7,7 +7,7 @@ export const Pagination = ({ currentPage, totalPages, setPage }: ProductPaginati
   const { pagesToShow, firstPage, lastPage } = useProductsPagination(totalPages, currentPage);
 
   return (
-    <div className="flex justify-center gap-4 pb-12 lg:pb-0">
+    <div className="flex justify-center gap-4 pb-12">
       <button
         className={clsx('btn font-semibold', firstPage && 'text-gray-dark')}
         disabled={firstPage}

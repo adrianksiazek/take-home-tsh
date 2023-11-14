@@ -12,7 +12,7 @@ export const Header = () => {
 
   return (
     <header className="min-h-[10vh]">
-      <div className="container-2xl mx-auto pb-12 pt-12 lg:pb-0">
+      <div className="container-2xl mx-auto pb-12 pt-10 lg:pb-0">
         <div className="flex items-center justify-between gap-8">
           {showMobile ? (
             <div className="flex w-full flex-col gap-6">
