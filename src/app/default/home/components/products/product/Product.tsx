@@ -2,7 +2,7 @@ import { useState } from 'react';
 import clsx from 'clsx';
 
 import { Button } from 'ui/button/Button';
-import { ProductModal } from '../product-modal/ProductModal';
+import { ProductModal } from '../productModal/ProductModal';
 
 import { ProductProps } from './Product.types';
 import { ProductRating } from './ProductRating';

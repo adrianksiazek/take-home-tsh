@@ -2,8 +2,8 @@ import { Loader } from 'ui';
 
 import { useProducts } from './Products.effect';
 import { ProductsEmptyList } from './ProductEmptylist';
-import { Pagination } from './products-pagination/ProductsPagination';
-import { ProductList } from './product-list/ProductList';
+import { Pagination } from './productsPagination/ProductsPagination';
+import { ProductList } from './productList/ProductList';
 
 export const Products = () => {
   const { productList, isLoading, isError, setPage, page } = useProducts();
