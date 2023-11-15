@@ -1,9 +1,6 @@
 import { Product } from '../product/Product';
-import { Product as ProductModel } from 'api/actions/product/product.types';
 
-type ProductListProps = {
-  productList: ProductModel[];
-};
+import { ProductListProps } from './ProductList.types';
 
 export const ProductList = ({ productList }: ProductListProps) => (
   <div className="grid place-content-center gap-6 py-12 2xs:grid-cols-2 lg:grid-cols-4">
