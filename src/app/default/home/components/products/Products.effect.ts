@@ -43,5 +43,5 @@ export const useProducts = () => {
     }
   }, [page, lastPage, setSearchParams]);
 
-  return { productList, isLoading, isError, searchParams, page, lastPage, setPage };
+  return { productList, isLoading, isError, searchParams, page, setPage };
 };
